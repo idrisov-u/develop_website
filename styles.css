@@ -1,0 +1,109 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body with a background image */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') center/cover no-repeat;
+    background-attachment: fixed; /* Fixed background image */
+    color: #fff; /* Lighter text color */
+
+    /* Add an overlay to make the background image partially visible */
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Blue-like color with reduced opacity */
+    z-index: -1; /* Place it behind the content */
+}
+
+/* Header styling with a semi-transparent background */
+header {
+    background-color: rgba(255, 105, 0, 0.7); /* Orange-like color with transparency */
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero section styling with a text shadow */
+#hero {
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(255, 105, 0, 0.5); /* Text shadow in orange-like color */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff5722; /* Orange-like color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker shade of orange on hover */
+}
+
+/* Services section styling with a background gradient */
+#services {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(rgba(255, 105, 0, 0.5), rgba(255, 105, 0, 0.1)); /* Gradient in orange-like color */
+}
+
+/* Fancy styling for headers and texts with light color and shadows */
+#services h2,
+#services h3,
+#services p,
+#hero h1,
+#hero p {
+    color: #f2f2f2; /* Light color for text */
+    text-shadow: 2px 2px 4px rgba(255, 105, 0, 0.5); /* Text shadow in orange-like color */
+}
+
+/* Rest of the CSS styles remain the same */
