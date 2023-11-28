@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #fff;
     position: relative;
-    margin: 0;
-    padding: 0;
 }
 
 body::before {
@@ -19,7 +23,7 @@ body::before {
 
 /* Header styling with a semi-transparent background */
 header {
-    background-color: rgba(255, 105, 0, 0.7); /* Orange-like color with transparency */
+    background-color: rgba(255, 105, 0, 0.7);
     color: #fff;
     padding: 20px 0;
 }
@@ -57,7 +61,7 @@ nav {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('background.jpg') center/cover no-repeat; /* Apply background only to the hero section */
+    background: url('background.jpg') center/cover no-repeat;
     background-attachment: fixed;
     position: relative;
 }
@@ -66,16 +70,18 @@ nav {
     max-width: 2500px;
     margin: 20 auto;
 }
+
 #hero h1,
 #hero h2,
 #hero p {
-    font-size: 1.5em; /* Double the font size */
-    color: #ffff; /* Darker text color */
-    text-shadow: 2px 2px 4px rgba(255, 105, 0, 0.5); /* Orange-like shadow */
+    font-size: 1.5em;
+    color: #ffff;
+    text-shadow: 2px 2px 4px rgba(255, 105, 0, 0.5);
 }
 
 /* Other Section Styling */
-#about, #contact {
+#about,
+#contact {
     width: 100%;
     margin: 0;
     padding: 80px 20px;
@@ -84,18 +90,18 @@ nav {
 
 /* About Us Section Styling */
 #about {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 160, 0, 0.3));
 }
 
 /* Contact Section Styling */
 #contact {
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 180, 0, 0.3));
 }
 
 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #ff5722; /* Orange-like color */
+    background-color: #ff5722;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -104,26 +110,26 @@ nav {
 }
 
 .cta-button:hover {
-    background-color: #e64a19; /* Darker shade of orange on hover */
+    background-color: #e64a19;
 }
 
 /* Service section styling with alternating photo and text */
 .service {
     max-width: 100%;
     margin: 0 auto;
-    padding: 80px,20px;
+    padding: 80px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse; /* Alternate the layout */
+    flex-direction: row-reverse;
 }
 
 /* Service Section Text Styling */
 .service h3,
 .service p {
-    color: #555; /* Darker text color */
-    font-size: 1.5em; /* Double the font size */
-    text-shadow: 2px 2px 4px rgba(19, 18, 17, 0.5); /* Text shadow in orange-like color */
+    color: #555;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(19, 18, 17, 0.5);
 }
 
 /* About Us and Contact Section Text Styling */
@@ -131,9 +137,9 @@ nav {
 #about p,
 #contact h2,
 #contact p {
-    color: #555; /* Darker text color */
-    font-size: 1.5em; /* Double the font size */
-    text-shadow: 2px 2px 4px rgba(19, 18, 17, 0.5); /* Text shadow in orange-like color */
+    color: #555;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(19, 18, 17, 0.5);
 }
 
 .service img {
@@ -141,53 +147,129 @@ nav {
     height: auto;
 }
 
-
 /* Styling for Each Service Section */
 
 /* Service Section 1 Styling */
 #service1 {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url('service1.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)),
+        url('service1.jpg') center/cover no-repeat;
     text-align: left;
     padding: 80px 20px;
 }
 
 /* Service Section 2 Styling */
 #service2 {
-    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)), url('service2.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)),
+        url('service2.jpg') center/cover no-repeat;
     text-align: right;
     padding: 80px 20px;
 }
 
 /* Service Section 3 Styling */
 #service3 {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url('service3.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)),
+        url('service3.jpg') center/cover no-repeat;
     text-align: left;
     padding: 80px 20px;
 }
 
 /* Service Section 4 Styling */
 #service4 {
-    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)), url('service4.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)),
+        url('service4.jpg') center/cover no-repeat;
     text-align: right;
     padding: 80px 20px;
 }
 
 /* Service Section 5 Styling */
 #service5 {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)), url('service5.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6)),
+        url('service5.jpg') center/cover no-repeat;
 }
 
 /* Service Section 6 Styling */
 #service6 {
-    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)), url('service6.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.6)),
+        url('service6.jpg') center/cover no-repeat;
 }
-
 
 /* Footer Styling */
 footer {
-    background-color: #005fa8; /* Royal Blue */
+    background-color: #005fa8;
     color: #fff;
     padding: 20px 0;
     text-align: center;
+}
 
+.menu {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 250px;
+  transition: 0.5s;
+}
+
+.menu ul {
+  list-style: none; 
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  padding: 30px;
+  text-decoration: none;
+  font-size: large;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #ffff;
+  text-shadow: 2px 2px 4px rgba(255, 105, 0, 0.5);
+}
+
+#burger-toggle:checked ~ .menu {
+  display: block;
+  right: 0px;
+}
+
+.burger .line {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  position: absolute;
+  right: 0px;
+  z-index: 1
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }  
+  
+  .menu {
+    background: #FFD580; 
+/*  z-index: 10; */    
+    right: -100%;
+  }  
+  
+  .menu li {
+    display: block;
+    border-bottom: 1px solid #ccc;
+     padding: 15px;
+  }
+  
+  .menu ul {
+    display: flex;
+    flex-direction: column;
+  }  
 }
