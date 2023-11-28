@@ -1,4 +1,3 @@
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -15,11 +14,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
 
-    
     alert('Спасибо за ваш интерес! Мы свяжемся с вами в ближайшее время.');
     this.reset(); // Clear the form fields
 });
